@@ -159,3 +159,19 @@ export const menuSupportThird = [
 ]
 
 
+export const menuWhereToBuy = [
+    {
+        label: "Authorized retailers",
+        href: "#"
+    },
+    {
+        label: "Services & Support",
+        href: "#"
+    },
+    {
+        label: "Explore all ways to buy",
+        href: "#",
+    },
+]
+
+

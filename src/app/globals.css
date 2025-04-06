@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@plugin 'tailwind-scrollbar' {
+  nocompatible: true;
+  preferredStrategy: 'pseudoelements';
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -7,14 +12,20 @@
 
 @theme inline {
   --color-background: var(--background);
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --text-color: white;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: rgb(69, 26, 26);
     --foreground: #ededed;
   }
 }
